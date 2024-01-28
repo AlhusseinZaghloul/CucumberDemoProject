@@ -15,11 +15,11 @@ public class LoginPageStepDefinition {
     private WebDriver driver;
     private LoginPage loginPage;
     @Before
-    public void setup(){
+    public void setupBrowser(){
         driver = new ChromeDriver();
     }
     @After
-    public void tearDown(){
+    public void closeBrowser(){
       //  if(driver!=null){
             driver.quit();
        // }
